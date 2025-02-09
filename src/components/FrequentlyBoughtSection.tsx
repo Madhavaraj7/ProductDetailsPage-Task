@@ -3,7 +3,6 @@ import { ScrollView, View, Text, Image, StyleSheet, Dimensions, TouchableOpacity
 
 const screenWidth = Dimensions.get('window').width;
 
-// Define a type for the product objects
 interface Product {
     images: {
         primary: string;
@@ -18,7 +17,6 @@ interface Product {
     };
 }
 
-// Define the props for the component
 interface FrequentlyBoughtSectionProps {
     products: Product[];
 }
@@ -188,7 +186,7 @@ const styles = StyleSheet.create({
     },
     progressBarBackground: {
         height: 4,
-        width: '40%', // Reduced width for the progress bar
+        width: '40%', 
         backgroundColor: '#ddd',
         borderRadius: 2,
         overflow: 'hidden',

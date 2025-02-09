@@ -38,9 +38,9 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   colorButton: {
-    flexDirection: 'row', // Ensures horizontal layout
+    flexDirection: 'row',
     alignItems: 'center',
-    width: '48%', // Keeps buttons on the same line (2 per row)
+    width: '48%', 
     marginVertical: 10,
     borderRadius: 12,
     borderWidth: 2,
@@ -49,19 +49,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   selectedColor: {
-    borderColor: '#006400', // Dark green for the selected border
+    borderColor: '#006400',
   },
   colorBox: {
-    width: 30, // Size of the color box
+    width: 30,
     height: 30,
     borderRadius: 5,
-    marginRight: 10, // Space between the color box and text
+    marginRight: 10, 
   },
   colorText: {
-    fontSize: 16, // Font size for better readability
+    fontSize: 16, 
     color: '#000',
     fontWeight: '500',
-    flexShrink: 1, // Ensures text resizes if space is limited
+    flexShrink: 1, 
   },
 });
 

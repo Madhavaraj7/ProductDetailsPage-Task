@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
   },
   barForeground: {
     height: 8,
-    backgroundColor: '#006400', // Darker green
+    backgroundColor: '#006400', 
     borderRadius: 4,
   },
   countText: {
@@ -194,14 +194,14 @@ const styles = StyleSheet.create({
   },
   authorContainer: {
     flexDirection: 'row',
-    alignItems: 'flex-start', // Align to top
+    alignItems: 'flex-start', 
     marginBottom: 8,
   },
   authorAvatar: {
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#006400', // Darker green
+    backgroundColor: '#006400', 
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 12,

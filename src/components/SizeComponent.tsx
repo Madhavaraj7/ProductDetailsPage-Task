@@ -33,13 +33,11 @@ const SizeComponent = ({
 
   return (
     <View style={styles.container}>
-      {/* Collapsible Header */}
       <TouchableOpacity style={styles.header} onPress={() => setExpanded(!expanded)}>
         <Text style={styles.title}>Size Details</Text>
         <Icon name={expanded ? 'chevron-up' : 'chevron-down'} size={22} color="blue" />
       </TouchableOpacity>
 
-      {/* Expanded Content */}
       {expanded && (
         <View style={styles.details}>
           <View style={styles.table}>
@@ -48,10 +46,9 @@ const SizeComponent = ({
             {height !== 'N/A' && renderRow('Height:', height, false)}
             {seatWidth !== 'N/A' && renderRow('Seat Width:', seatWidth, false)}
             {seatDepth !== 'N/A' && renderRow('Seat Depth:', seatDepth, false)}
-            {seatHeight !== 'N/A' && renderRow('Seat Height:', seatHeight, true)} {/* Last row */}
+            {seatHeight !== 'N/A' && renderRow('Seat Height:', seatHeight, true)} 
           </View>
 
-          {/* Display Image if available */}
           <Image source={localImage} style={styles.image} />
         </View>
       )}

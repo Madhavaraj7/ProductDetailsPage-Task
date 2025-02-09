@@ -9,7 +9,7 @@ import {
     ScrollView,
 } from 'react-native';
 import { fetchProductDetails } from '../services/api';
-import Icon from 'react-native-vector-icons/Ionicons'; // Import Share Icon
+import Icon from 'react-native-vector-icons/Ionicons'; 
 import ColorSelector from '../components/ColorSelector';
 import ProductDescription from '../components/ProductDescription';
 import SizeComponent from '../components/SizeComponent';
@@ -39,7 +39,7 @@ const ProductDetailScreen = () => {
                         isBestSeller: true,
                     });
                     setSelectedImage(uniqueImages[0]);
-                    setSelectedVariant(data.product.variants[0]); // Default to the first variant
+                    setSelectedVariant(data.product.variants[0]);
                 }
             } catch (error) {
                 console.error('Error fetching product details:', error);
@@ -96,7 +96,6 @@ const ProductDetailScreen = () => {
                     </View>
                 </View>
 
-                {/* Product Title with Share Icon */}
                 <View style={styles.titleContainer}>
                     <Text style={styles.title}>{product.name}</Text>
                     <TouchableOpacity onPress={() => console.log('Share pressed')}>
@@ -104,7 +103,6 @@ const ProductDetailScreen = () => {
                     </TouchableOpacity>
                 </View>
 
-                {/* Price, Discount, and Original Price in One Line */}
                 <View style={styles.priceContainer}>
                     <Text style={styles.currentPrice}>${selectedVariant.price.current}</Text>
                     <Text style={styles.originalPrice}>${selectedVariant.price.original}</Text>
@@ -122,7 +120,6 @@ const ProductDetailScreen = () => {
                 <View style={styles.divider} />
 
 
-                {/* Color Selector */}
                 <ColorSelector
                     variants={product.variants}
                     onSelect={handleVariantSelect}
@@ -228,7 +225,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
     },
     title: {
-        fontSize: 16, // Made it smaller
+        fontSize: 16, 
         fontWeight: 'bold',
     },
     priceContainer: {
@@ -237,7 +234,7 @@ const styles = StyleSheet.create({
         marginTop: 5,
     },
     currentPrice: {
-        fontSize: 30, // Made it BIGGER
+        fontSize: 30,
         color: 'black',
         fontWeight: 'bold',
     },
@@ -245,19 +242,19 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         paddingHorizontal: 10,
         paddingVertical: 2,
-        backgroundColor: '#E44A4A', // Background is red
-        borderTopLeftRadius: 15,  // Only two edges have border-radius
+        backgroundColor: '#E44A4A', 
+        borderTopLeftRadius: 15,  
         borderBottomRightRadius: 15,
     },
     discountText: {
-        fontSize: 16, // Made it slightly bigger
-        color: 'white', // Text is white
+        fontSize: 16, 
+        color: 'white',
         fontWeight: 'bold',
     },
     originalPrice: {
         textDecorationLine: 'line-through',
         color: '#888',
-        fontSize: 15, // Made it bigger
+        fontSize: 15, 
         marginLeft: 10,
     },
     ratingContainer: {
@@ -281,8 +278,8 @@ const styles = StyleSheet.create({
     },
     divider: {
         height: 2,
-        backgroundColor: '#ccc', // Light gray color
-        marginVertical: 11, // Spacing above and below
+        backgroundColor: '#ccc', 
+        marginVertical: 11, 
     },
 });
 
